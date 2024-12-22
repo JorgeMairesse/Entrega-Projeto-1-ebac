@@ -1,0 +1,161 @@
+/* Estilo básico para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50; /* Cor de fundo escura */
+}
+
+/* Menu de navegação */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav .logo {
+    width: 40px; /* Logo tamanho adequado */
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Seções principais */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Home - Cor de fundo */
+#home {
+    background-color: #2c3e50; /* Cor inspirada no ambiente natural do jogo */
+}
+
+/* Carrossel de imagens */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border: none; /* Remover a borda verde */
+}
+
+.carousel-images {
+    display: flex;
+    width: 300%;
+    animation: slide 15s infinite;
+}
+
+.carousel-images img {
+    width: 33.33%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Animação do carrossel */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-33.33%); }
+    66.66% { transform: translateX(-66.66%); }
+    100% { transform: translateX(0); }
+}
+
+/* Texto do carrossel */
+.carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: black; /* Cor das letras do carrossel agora preta */
+    font-size: 2em;
+    transform: translateY(-50%);
+}
+
+/* Notícias - Cor de fundo */
+#noticias {
+    background-color: #34495e; /* Cor escura com variação */
+}
+
+.news-item {
+    margin-bottom: 20px;
+}
+
+/* Sobre o Jogo - Cor de fundo */
+#sobre-jogo {
+    background-color: #2c3e50; /* Cor escura similar */
+}
+
+#sobre-jogo p {
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* Galeria - Cor de fundo */
+#galeria {
+    background-color: #34495e; /* Cor escura similar à do "notícias" */
+    text-align: center;
+}
+
+#galeria .gallery img {
+    width: 30%;
+    margin: 10px;
+}
+
+/* Fale Conosco - Cor de fundo */
+#contato {
+    background-color: #2c3e50; /* Cor escura */
+    text-align: center;
+}
+
+#contato form input, #contato form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contato form button {
+    padding: 10px 20px;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* WhatsApp - Botão */
+.whatsapp-btn {
+    background-color: #2c3e50;
+    padding: 15px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.whatsapp-btn img {
+    width: 40px;
+    height: 40px;
+}
